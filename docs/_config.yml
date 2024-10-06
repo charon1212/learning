@@ -1,3 +1,8 @@
 title: learning
-remote_theme: just-the-docs/just-the-docs
 url: https://charon1212.github.io/learning/
+
+# use just-the-docs theme: <https://just-the-docs.com/>
+remote_theme: just-the-docs/just-the-docs
+
+# use dark theme: <https://just-the-docs.com/docs/customization/#color-schemes>
+color_scheme: dark
