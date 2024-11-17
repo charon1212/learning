@@ -1,7 +1,8 @@
 ---
 layout: default
 title: oss-db-silver
-nav_order: 2
+nav_order: 1
+parent: postgresql
 ---
 
 # oss-db-silver

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: create-environment
-nav_order: 1
+nav_order: 101
+parent: Home
 ---
 
 # create-environment
