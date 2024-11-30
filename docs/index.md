@@ -12,4 +12,5 @@ nav_order: 1
 - [git](./02_git/git.md)
 - [nodejs](./03_nodejs/nodejs.md)
 - [npm](./04_npm/npm.md)
+- [google_apps_script](./05_google_apps_script/google_apps_script.md)
 - [create-environment](./a1_create-environment/create-environment.md)
