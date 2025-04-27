@@ -104,7 +104,7 @@ parent: postgresql
   - 単位は、メモリ系で`kB,MB,GB`、時間系で`ms,s,min,h,d`。
   - 反映は厳しい順に、 変更不可 > 再起動必要 > reload必要 > superuserのみSET文 > 誰でもSET文 の5種類。
 - listen_addresses: 指定したIPアドレス（PostgreSQLサーバ側）のみ監視する。その他のIPへの接続は無視する。
-  - 空だと一切接続を受け付けないことになる。構築初期は`'*'`が指定されていた（全接続を監視）。
+  - 空だと一切接続を受け付けないことになる。構築初期は`'local'`が指定される。（ローカル接続のみ許可）
 - ログ
   - まず、`log_destination`で標準エラー出力・syslog(linux)・eventlog(windows)へログ出力ができる。
   - 続いて、`logging_collector`,`log_directory`,`log_filename`で、標準エラー出力をファイルへ出力できる。
