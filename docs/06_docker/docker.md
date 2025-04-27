@@ -52,3 +52,12 @@ services:
 
 - `docker-compose up -d`: docker-compose.yamlに従ってサービスを作成して起動する。`-d`はバックグラウンド実行のオプション。
 - `docker-compose down  -->  docker-compose up -d`: docker-compose.yamlを変更した場合の変更内容の反映。
+
+## docker-volume
+
+- `docker create volume <volume-name>`コマンドで作成できるデータ保存領域。
+  - docker-compose.yamlで、`- ./log:/some-app/archive/log`のように`./log`フォルダ等の実際のフォルダを指定せず、ボリューム名を使って`- some-app-log:/some-app/archive/log`のように利用できる。
+  - Docker自身が管理する領域に格納するため、`docker volume ls`や`docker volume inspect`で管理できる。
+  - 環境差異による問題（パスの違い、パーミッション問題など）が発生しずらい。
+  - バインドマウントと比較して、Docker VolumeはI/Oパフォーマンスがチューニングされているケースがあり、特にDockerDesktop環境で有用。
+  - ボリューム単位でバックアップやリストアが容易。
