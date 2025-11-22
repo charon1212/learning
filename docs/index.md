@@ -14,4 +14,5 @@ nav_order: 1
 - [npm](./04_npm/npm.md)
 - [google_apps_script](./05_google_apps_script/google_apps_script.md)
 - [docker](./06_docker/docker.md)
+- [electron_react](./07_electron_react/electron_react.md)
 - [create-environment](./a1_create-environment/create-environment.md)
